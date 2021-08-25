@@ -4,7 +4,7 @@
  * @Author: monster
  * @Date: 2021-08-24 23:49:18
  * @LastEditors: monster
- * @LastEditTime: 2021-08-25 23:01:09
+ * @LastEditTime: 2021-08-26 00:40:21
  */
 import React, { memo } from 'react'
 import propTypes from "prop-types";
@@ -22,7 +22,7 @@ import { ThemeHeaderRcmWrapper } from "./style"
         <div className="keyword">
           {
             keywords.map((item,index)=>(
-              <div className="item">
+              <div className="item" key={item}>
                 <a href="todo">{item}</a>
                 {
                   (index+1)!==keywords.length&&<span className="divider">|</span>

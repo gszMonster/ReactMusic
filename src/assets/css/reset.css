@@ -60,7 +60,7 @@ body, textarea, select, input, button {
 }
 
 .wrap-v2 {
-  width: 980px;
+  width: 984px;
   margin: 0 auto;
 }
 
@@ -103,6 +103,13 @@ body, textarea, select, input, button {
 .sprite_playbar {
   background: url(../img/playbar_sprite.png) no-repeat 0 9999px;
 }
+.sprite_download {
+  background: url(../img/download.png) no-repeat 0 9999px;
+}
+.sprite_banner {
+  background: url(../img/banner_sprite.png) no-repeat 0 9999px;
+}
+
 
 /* .sprite_playlist {
   background: url(../img/playlist_sprite.png) no-repeat 0 9999px;

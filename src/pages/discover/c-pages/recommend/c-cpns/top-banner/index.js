@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: monster
+ * @Date: 2021-08-17 23:06:06
+ * @LastEditors: monster
+ * @LastEditTime: 2021-08-26 00:51:41
+ */
 import React, { memo, useEffect, useRef, useCallback, useState } from "react";
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
 import { Carousel } from "antd";
@@ -16,8 +24,8 @@ export default memo(function MKTopBanner() {
     }),
     shallowEqual
   );
-  const dispatch = useDispatch();
 
+  const dispatch = useDispatch();
   const bannerRef =  useRef();
 
   useEffect(() => {
