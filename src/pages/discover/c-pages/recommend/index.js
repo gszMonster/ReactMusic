@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: monster
+ * @Date: 2021-08-09 22:23:36
+ * @LastEditors: monster
+ * @LastEditTime: 2021-08-31 00:36:14
+ */
 import React, { memo } from 'react'
 // // import { connect } from "react-redux";
 // import { useDispatch, useSelector, shallowEqual } from "react-redux";
@@ -18,10 +26,10 @@ function MKRecommend(props) {
     <RecommendWrapper>
       <TopBanner/>
       <Content className="wrap-v2">
-        <RecommentRight>
+        <RecommentLeft>
           <HotRecommend/>
-        </RecommentRight>
-        <RecommentLeft>right</RecommentLeft>
+        </RecommentLeft>
+        <RecommentRight>right</RecommentRight>
       </Content>
     </RecommendWrapper>
   )
