@@ -4,7 +4,7 @@
  * @Author: monster
  * @Date: 2021-08-25 00:19:27
  * @LastEditors: monster
- * @LastEditTime: 2021-09-01 00:41:17
+ * @LastEditTime: 2021-09-03 00:22:10
  */
 
 import React, { memo, useEffect } from 'react'
@@ -34,7 +34,7 @@ export default memo(function MKHotRecomment() {
       <ThemeHeaderRcm title="热门推荐" keywords={['华语','流行','摇滚','民谣','电子']}/>
       <div className="recomment-content">
         {
-          hotRecommends.map((item,index) => (
+          hotRecommends.map(item => (
             <SongCover key={item.id} info={item}/>
           ))
         }

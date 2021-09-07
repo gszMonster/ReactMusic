@@ -4,7 +4,7 @@
  * @Author: monster
  * @Date: 2021-08-09 22:23:36
  * @LastEditors: monster
- * @LastEditTime: 2021-08-31 00:36:14
+ * @LastEditTime: 2021-09-02 23:30:32
  */
 import React, { memo } from 'react'
 // // import { connect } from "react-redux";
@@ -13,6 +13,8 @@ import React, { memo } from 'react'
 
 import TopBanner from "./c-cpns/top-banner";
 import HotRecommend from './c-cpns/hot-recommend';
+import NewAlbum from "./c-cpns/new-album";
+
 import { 
   RecommendWrapper,
   Content,
@@ -28,6 +30,7 @@ function MKRecommend(props) {
       <Content className="wrap-v2">
         <RecommentLeft>
           <HotRecommend/>
+          <NewAlbum/>
         </RecommentLeft>
         <RecommentRight>right</RecommentRight>
       </Content>

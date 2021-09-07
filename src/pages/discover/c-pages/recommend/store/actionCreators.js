@@ -4,7 +4,7 @@
  * @Author: monster
  * @Date: 2021-08-12 00:29:13
  * @LastEditors: monster
- * @LastEditTime: 2021-08-26 00:48:58
+ * @LastEditTime: 2021-09-06 21:26:17
  */
 import * as types from "./constants";
 import * as request from "../request"
@@ -29,6 +29,20 @@ export const getHotRecommendsAction = (limit) => {
   return dispatch => {
     request.getHotRecommends(limit).then(res => {
       dispatch(changeHotRecommendsAction(res))
+    })
+  }
+}
+
+//新碟上架
+const changeNewAlbumsAction = (res) => ({
+  type: types.CHANGE_NEW_ALBUMS,
+  newAlbums: res.albums
+})
+
+export const getNewAlbumsAction = (limit) => {
+  return dispatch => {
+    request.getNewAlbums(limit).then(res => {
+      dispatch(changeNewAlbumsAction(res));
     })
   }
 }

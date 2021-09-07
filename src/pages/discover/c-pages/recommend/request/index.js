@@ -16,3 +16,13 @@ export function getHotRecommends(limit) {
     }
   });
 }
+
+//新碟上架数据获取
+export function getNewAlbums(limit) {
+  return request({
+    url: "album/new",
+    params: {
+      limit
+    }
+  })
+}
