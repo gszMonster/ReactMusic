@@ -4,7 +4,7 @@
  * @Author: monster
  * @Date: 2021-08-09 22:23:36
  * @LastEditors: monster
- * @LastEditTime: 2021-09-02 23:30:32
+ * @LastEditTime: 2021-09-08 20:47:13
  */
 import React, { memo } from 'react'
 // // import { connect } from "react-redux";
@@ -13,6 +13,7 @@ import React, { memo } from 'react'
 
 import TopBanner from "./c-cpns/top-banner";
 import HotRecommend from './c-cpns/hot-recommend';
+import RcdRanking from './c-cpns/rcd-ranking';
 import NewAlbum from "./c-cpns/new-album";
 
 import { 
@@ -31,6 +32,7 @@ function MKRecommend(props) {
         <RecommentLeft>
           <HotRecommend/>
           <NewAlbum/>
+          <RcdRanking/>
         </RecommentLeft>
         <RecommentRight>right</RecommentRight>
       </Content>
